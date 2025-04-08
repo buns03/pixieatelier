@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artworks - Pixie Atelier</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/view-more.css" />
+</head>
+
+<body>
+<button class="back-btn" onclick="goBack()">← Back</button>
+  <h1 class="site-title">PIXIE ATELIER</h1>
+
+  <div class="main-container">
+    <!-- Header Box -->
+    <div class="header">
+      <h2>ARTWORKS</h2>
+    </div>
+
+    <!-- Artwork Grid -->
+    <div class="artworks">
+      <div class="art-box" onclick="openImage('css/art1.jpg')">
+        <img src="css/art1.jpg" alt="Art 1" />
+      </div>
+      <div class="art-box" onclick="openImage('css/art2.jpg')">
+        <img src="css/art2.jpg" alt="Art 2" />
+      </div>
+      <div class="art-box" onclick="openImage('css/art3.jpg')">
+        <img src="css/art3.jpg" alt="Art 3" />
+      </div>
+      <div class="art-box" onclick="openImage('css/art4.jpg')">
+        <img src="css/art4.jpg" alt="Art 4" />
+      </div>
+      <div class="art-box" onclick="openImage('css/art5.jpg')">
+        <img src="css/art5.jpg" alt="Art 5" />
+      </div>
+      <div class="art-box" onclick="openImage('css/art6.jpg')">
+        <img src="css/art6.jpg" alt="Art 6" />
+      </div>
+      <div class="art-box" onclick="openImage('css/art7.jpg')">
+        <img src="css/art7.jpg" alt="Art 7" />
+      </div>
+      <div class="art-box" onclick="openImage('css/art8.jpg')">
+        <img src="css/art9.jpg" alt="Art 8" />
+      </div>
+      <div class="art-box" onclick="openImage('css/art9.jpg')">
+        <img src="css/art9.jpg" alt="Art 9" />
+      </div>
+      <div class="art-box" onclick="openImage('css/art10.jpg')">
+        <img src="css/art10.jpg" alt="Art 10" />
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Modal for Enlarged Image -->
+  <!-- <div id="imageModal" class="modal" onclick="closeModal(event)">
+    <img id="enlargedImage" class="modal-content" />
+  </div> -->
+
+  <div id="imageModal" class="modal" onclick="closeModal(event)">
+    <span class="close-btn" onclick="closeModal(event)">&times;</span>
+    <img id="enlargedImage" class="modal-content" />
+  </div>
+
+  
+
+  <script src="script/view-more.js"></script>
+</body>
+
+</html>
